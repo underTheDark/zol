@@ -4,7 +4,9 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-		
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+			
+		</script>
 	</head>
 	<body>
 		<header>
@@ -40,14 +42,16 @@
 							登录Z商城
 						</a>
 					</div>
-					<div>
+					<div class="hide">
 						<a>
 							商家登录
 						</a>
 					</div>
+					<div class="clear"></div>
 			<!-- 用户登录 -->
-		<div>
-				    
+		<div id="y-login" >
+				<div class="tip"></div>
+						
 						<input type="text" placeholder="手机号/邮箱/用户名" />
 						<input type="text" placeholder="密码" />
 				<div>
@@ -63,7 +67,9 @@
 				</div>
 		</div>
 				<!-- 商家登录 -->
-				<div  style="display: none;">
+				<div   id="s-login" style="display: none;">
+					    <div class="tip"></div>
+
 						<input type="text" placeholder="手机号/邮箱/用户名" />
 						<input type="text" placeholder="密码" />
 						<div>

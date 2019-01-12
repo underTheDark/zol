@@ -35,7 +35,6 @@ const uglify=require("gulp-uglify");
 			"presets":["es2015"]
 		 }))
 		 .pipe(uglify())
-		 .pipe(rename("build.js"))
 		 .pipe(gulp.dest("dist/js"))
 	 })
 //监听状态
