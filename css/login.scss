@@ -112,19 +112,61 @@ section{
  #m-right .tip{
 	 width:380px;
 	 height:30px;
+	 color: red;
+	 font-size: 14px;
  }
-	.clear{
+	.clear{  
 		clear: both;
 	}
-	#y-login input{
-		width:378px;
-		height: 33px;
-		border: 1px solid #CECECE;
-		margin-bottom: 10px;
-	
+	#m-right {
+		input{
+			width:378px;
+			height: 33px;
+			border: 1px solid #CECECE;
+			margin-bottom: 10px;
 	}
+	  .signin,.signin-t{
+			margin:10px 0;
+			background-color: #FF0000;
+			height: 40px;
+			font-size: 20px;
+			@include point;
+			color: white;
+			width:380px;
+		}
+		#y-login  a:nth-child(1){
+			float: left;
+			color: black;
+			font-size: 14px;
+		
+		}
+		#y-login  a:nth-child(2){
+		  float: right;
+			color: blue;
+		}
+		#s-login {
+			float: right;
+		}
+		#verify input:nth-of-type(1){
+				height: 35px;
+			
+				width:274px;
+				@include point;
+				
+		}
+	  	#verify input:nth-of-type(2){
+	  		height: 35px;
+	  		border-left: 1px solid #CECECE;
+	  		width:93px;
+	  		@include point;
+	  		color: black;
+	  		display: inline-block;
+	  	}
+	  
+	}
+
 	
-	#y-login input:nth-of-type(3){
+	/* #y-login input:nth-of-type(3){
 		margin:10px 0;
 		background-color: #FF0000;
 		height: 40px;
@@ -192,9 +234,68 @@ section{
 			width:380px;}
 	#s-login div{
 		float: right;
+	} */
+/* 登录验证样式 */
+/* #verify{
+	  .tip{
+	 width:380px;
+	 height:30px;
+  }
+   input{
+ 	width:378px;
+ 	height: 33px;
+ 	border: 1px solid #CECECE;
+ 	margin-bottom: 10px;
+ 
+  }
+	input:nth-of-type(2){
+	
+	
+		height: 35px;
+	
+		width:274px;
+		@include point;
+		
 	}
-
-
+	input:nth-of-type(3){
+	
+	
+		height: 35px;
+	  border-left: 1px solid #CECECE;
+		width:93px;
+		@include point;
+		color: black;
+		display: inline-block;
+	}
+	input:nth-of-type(5){
+			margin:10px 0;
+			background-color: #FF0000;
+			height: 40px;
+			font-size: 20px;
+			@include point;
+			color: white;
+			width:380px;
+	} */
+	p:nth-last-of-type(3){
+		border-bottom: 1px solid #CECECE;
+		float: left;
+		width:130px;
+		margin-top: 10px;
+	}
+		
+   p:nth-last-of-type(2){
+			width:115px;
+			float: left;
+			text-align: center;
+	}
+   p:nth-last-of-type(1){
+			border-bottom: 1px solid #CECECE;
+		float:left;
+	width:130px;
+	margin-top: 10px;
+	
+	
+}
 
 	
 /* footer样式 */

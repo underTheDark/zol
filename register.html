@@ -52,8 +52,8 @@
 		 <em>*</em>
 		 手机号：
 	 </div>
-	 <input type="text" />
-	 <span style="display: none"></span>
+	 <input type="text" class="phone" />
+	 <span style="display: none">手机格式不正确或用户名重复</span>
 	 <div class="clear-f">请填写手机号</div>
  </div>
  <!-- 2 -->
@@ -63,8 +63,8 @@
 		<em>*</em>
 		验证码：
 	</div>
-	 <input type="text" />
-	 <span style="display: none"></span>
+	 <input type="text" class="random"/>
+	 <span style="display: none">请填写验证码</span>
 	 <div class="clear-f">请填写验证码</div>
 
  </div>
@@ -75,9 +75,12 @@
 		<em>*</em>
 		验证码：
 	</div>
-	 <input type="text" id="teshu"/>
-	 <button id="teshu1">获取短信验证码</button>
-	 <span style="display: none"></span>
+	 <input type="text" class="getRandom"/>
+
+
+	 <button type="button" class="getVerify">获取短信验证码</button>
+	<span style="display: none">验证码错误</span>
+
 	 <div class="clear-f">请点击，获取手机验证码</div>
 	 
  </div>
@@ -88,8 +91,8 @@
 		<em>*</em>
 	密码：
 	</div>
-	 <input type="text" />
-	 <span style="display: none"></span>
+	 <input type="text" class="psw" />
+	 <span style="display: none">密码格式不正确</span>
 	 <div class="clear-f">6-16位字母和数字的组合，不可用特殊字符</div>
  </div>
  <!--5 -->
@@ -99,13 +102,13 @@
 		<em>*</em>
 		确认密码：
 	</div>
-	<input type="text" />
-	<span style="display: none"></span>
+	<input type="text" class="affirm-psw"/>
+	<span style="display: none">两次密码不一样</span>
 	<div class="clear-f">请再次输入密码</div>
  </div>
 <!--6-->
 <div >
-	<input type="checkbox" name="" id="" value="" />
+	<input type="checkbox" name="" class="agreement" checked="checked"/>
 	<div>
 		同意
 		<a href="http://help.zol.com/index.php?c=Detail&id=1019">
@@ -118,17 +121,17 @@
 </div>
 <!--7-->
 <div>
-	<input type="button" name="" id="" value="注册" />
+	<input type="button" name="" class="sign" value="注册" />
 </div>
 	  
 </div>
     <div id="m-right">
     	<p>如果您已经注册，<a href="http://localhost:8080/login.html">请直接登录</a>或者用以下方式登录：</p>
-		<div><a href="">微信账号登录</a></div>
-		<div><a href="">新浪微博登录</a></div>
-		<div><a href="">腾讯QQ登录</a></div>
-		<div><a href="">支付宝账号登录</a></div>
-		<div><a href="">百度账号登录</a></div>
+		<div><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx5b1a2b570ea8098e&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fweixin%2Fcallback.php&response_type=code&scope=snsapi_login&state=0">微信账号登录</a></div>
+		<div><a href="https://api.weibo.com/oauth2/authorize?client_id=4028615622&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fsina%2Fcallback.php&response_type=code">新浪微博登录</a></div>
+		<div><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=208936&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fqq%2Flibs%2Foauth%2Fget_access_token.php&state=ea4924c2176b61b06d5c3f2bc41f29b5&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,get_info,add_pic_t,get_repost_list,get_other_info,get_fanslist,get_idollist,add_idol,del_idol">腾讯QQ登录</a></div>
+		<div><a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D929bc83c188d61027d571246fb5a081f">支付宝账号登录</a></div>
+		<div><a href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=S8mu6XF2eyofbNPHkpUZwy79&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fbaidu%2Fcallback.php&scope=&state=e70f680b9d9cf5f2feea42b0563d89b3&display=page">百度账号登录</a></div>
     </div>
 </div>
 </form>
@@ -151,7 +154,7 @@
 </div>
 </div>
 </footer>
-<script type="text/javascript" src="js/login.js">
+<script type="text/javascript" src="js/register.js">
 
 </script>
 </body>

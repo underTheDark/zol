@@ -21,7 +21,7 @@
 				</div>
 				<div>
 					<span>还没有z商城账号？</span>
-					<a href="">
+					<a href="./register.html">
 						立即注册
 					</a>
 				</div>
@@ -48,35 +48,38 @@
 						</a>
 					</div>
 					<div class="clear"></div>
-			<!-- 用户登录 -->
-		<div id="y-login" >
+			<!-- 登录 -->
+		<div >
 				<div class="tip"></div>
 						
-						<input type="text" placeholder="手机号/邮箱/用户名" />
-						<input type="text" placeholder="密码" />
-				<div>
-					<a href="">手机动态码登录</a>
+						<input type="text" class="phone" placeholder="手机号/邮箱/用户名" />
+						<input type="text" class="psw" placeholder="密码" />
+			<!-- 用户登录 -->
+
+				<div  id="y-login">
+					<a href="#" class="verify">手机动态码登录</a>
+					<a href="" class="jump">忘记密码？</a>
+				</div>
+				<!-- 商家登录 -->
+				<div   id="s-login" style="display: none;">
+					
 					<a href="">忘记密码？</a>
 				</div>
-						<input type="button" value="登录" />
+				<!-- 手机验证登录 -->
+				<div id="verify" style="display: none;">
+						<input type="text" name="" class="random" value="验证码" />
+						<input type="button" name="" class="getVerify" value="获取验证码" />
+						<input type="text" name="" class="getRandom" placeholder="填写验证码" />
+				</div>
+						<input type="button"  value="登录" class="signin"/>
 					
 				<div>
 					<p></p>
 					<p>合作账号登录</p>
 					<p></p>
 				</div>
-		</div>
-				<!-- 商家登录 -->
-				<div   id="s-login" style="display: none;">
-					    <div class="tip"></div>
-
-						<input type="text" placeholder="手机号/邮箱/用户名" />
-						<input type="text" placeholder="密码" />
-						<div>
-							
-							<a href="">忘记密码？</a>
-						</div>
-						<input type="button" value="登录" />
+	
+				
 					
 				</div>
 			</div>
